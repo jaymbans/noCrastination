@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//jaymbans.github.io/noCrastination/static/css/main.4498e75a.css",
+    "main.js": "//jaymbans.github.io/noCrastination/static/js/main.855ea3b9.js",
+    "static/js/787.4c27379e.chunk.js": "//jaymbans.github.io/noCrastination/static/js/787.4c27379e.chunk.js",
+    "index.html": "//jaymbans.github.io/noCrastination/index.html",
+    "main.4498e75a.css.map": "//jaymbans.github.io/noCrastination/static/css/main.4498e75a.css.map",
+    "main.855ea3b9.js.map": "//jaymbans.github.io/noCrastination/static/js/main.855ea3b9.js.map",
+    "787.4c27379e.chunk.js.map": "//jaymbans.github.io/noCrastination/static/js/787.4c27379e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4498e75a.css",
+    "static/js/main.855ea3b9.js"
+  ]
+}
