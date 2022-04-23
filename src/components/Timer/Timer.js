@@ -40,6 +40,8 @@ function Timer() {
     secsLeftRef.current = settingsInfo.workTime * 60;
     setSecsLeft(secsLeftRef.current);
   }
+
+
   const toggleMode = () => {
     const nextMode = modeRef.current === 'work' ? 'break' : 'work';
     const nextSeconds = (nextMode === 'work' ? settingsInfo.workTime : settingsInfo.breakTime) * 60;
@@ -52,10 +54,6 @@ function Timer() {
   }
 
   useEffect(() => {
-
-
-
-
     startTimer();
 
     const timeInterval = setInterval(() => {
@@ -102,7 +100,7 @@ function Timer() {
       </div>
       <div className={'edit-buttons'}>
         <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
-        <TodoButton />
+        <TodoButton onClick={() => settingsInfo.setShowTasks(true)} />
       </div>
     </div>
 
