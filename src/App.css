@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(0, 162, 255);
+  background-color: rgb(57, 182, 254);
   color: black;
   width: 100%;
 }
@@ -68,4 +68,71 @@ button.with-text {
   font-size: 1rem;
 }
 
+.todoPanel {
+  background: white;
+  padding: 0px 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  align-items: center;
+}
 
+.todo-input {
+  border: 2px solid rgb(0, 162, 255);
+  border-radius: 5px;
+  width: 98%;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  background: rgb(255, 72, 72);
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.task-label {
+  color: white;
+}
+
+.complete {
+  background-color: rgb(51, 204, 51);
+}
+
+.delete-icon {
+  color: red;
+}
+
+.delete-icon,
+.edit-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.panelDiv {
+  /* background: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 460px;
+  padding: 10px;
+}
+
+.task-text {
+  max-width: 92%;
+  overflow-wrap: break-word;
+}
+
+.icons {
+  display: flex;
+  max-width: 8%;
+}

@@ -5,7 +5,7 @@ import ToDoContext from './ToDoContext';
 
 function ToDoPanel() {
   return (
-    <div>
+    <div className='todoPanel'>
       <ToDoList />
     </div>
   )

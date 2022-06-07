@@ -48,7 +48,7 @@ function TodoList() {
 
 
   return (
-    <div>
+    <div className='panelDiv'>
       <h1>What's on Your Agenda?</h1>
       <ToDoForm onSubmit={addTask} />
       <Todo
