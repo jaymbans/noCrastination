@@ -91,7 +91,13 @@ function Timer() {
       <CircularProgressbar
         value={percentageTimeLeft}
         text={`${mins}:${secs}`}
-        styles={buildStyles({ textColor: 'black', pathColor: 'black', trailColor: 'white' })}
+        background={true}
+        styles={buildStyles({
+          textColor: 'white',
+          pathColor: 'white',
+          trailColor: 'rgb(57, 182, 254)', backgroundColor: 'rgb(57, 182, 254)',
+          backgroundPadding: '100',
+        })}
       />
       <div className={'play-pause'}>
         {isPaused

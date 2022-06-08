@@ -10,19 +10,19 @@ function SettingsScreen() {
 
   return (
     <div className={'settings'} style={{ textAlign: 'left' }}>
-      <div>Settings:</div>
+      <div className={'slider-title'}>Settings:</div>
       <div className={'work-break'}>
         <label className={'slider-label'}>Work Timing (min): {timerInfo.workTime}:00</label>
         <ReactSlider
           className={'slider'}
           thumbClassName={'thumb'}
-          trackClassName={'track'}
+          trackClassName={'example-track'}
           value={timerInfo.workTime}
           min={1}
           max={60}
           onChange={newTime => timerInfo.setWorkTime(newTime)}
         />
-        <label>Break Timing (min): {timerInfo.breakTime}:00</label>
+        <label className={'slider-label'}>Break Timing (min): {timerInfo.breakTime}:00</label>
         <ReactSlider
           className={'slider'}
           thumbClassName={'thumb'}

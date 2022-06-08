@@ -1,13 +1,44 @@
 .slider {
-  height: 50px;
-  border: 3px solid white;
-  border-radius: 60px;
+  height: 20px;
+  border: 4px solid black;
+  margin: 25px;
+  background: rgb(57, 182, 254);
+  border-radius: 10px;
 }
 
 .thumb {
   background: white;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
 }
+
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+
+.example-track.example-track-0 {
+  background: red;
+}
+
+.slider-label {
+  font-family:monospace;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.slider-back {
+  font-family:monospace;
+  font-weight: bold;
+}
+
+.slider-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 2.2rem;
+}
+

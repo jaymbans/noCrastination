@@ -2,6 +2,8 @@
 :root {
   --white: white;
   --grayish: rgb(59, 59, 59);
+  --blue: rgb(57, 182, 254);
+  font-family: monospace;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   color: black;
   width: 100%;
 }
+
 
 main {
   display: flex;
@@ -48,11 +51,13 @@ button.with-text {
 
 /* settings screen */
 .settings {
-  background: var(--grayish);
-  color: white;
-  width: 100%;
+  background: var(--white);
+  color: black;
+  width: 60%;
   font-size: 3rem;
   padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .work-break {
@@ -66,8 +71,14 @@ button.with-text {
   width: 100px;
   height: 100px;
   font-size: 1rem;
+  color: black;
 }
 
+.slider-label {
+  font-family: serif;
+}
+
+/* To do settings */
 .todoPanel {
   background: white;
   padding: 0px 8px;
@@ -106,18 +117,28 @@ button.with-text {
   background-color: rgb(51, 204, 51);
 }
 
-.delete-icon {
-  color: red;
-}
-
 .delete-icon,
-.edit-icon {
+.edit-icon,
+.check-icon{
+  color: white;
   height: 1rem;
   width: 1rem;
 }
 
+.check-icon {
+  max-width: 8%;
+}
+
+.complete .icons .delete-icon,
+.complete .icons .check-icon {
+color: red;
+}
+
+.complete .icons .edit-icon{
+  color: black;
+}
+
 .panelDiv {
-  /* background: yellow; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,11 +149,21 @@ button.with-text {
 }
 
 .task-text {
-  max-width: 92%;
+  max-width: 84%;
   overflow-wrap: break-word;
+  font-weight: 380;
+
+}
+
+.complete .task-text {
+  text-decoration: line-through;
 }
 
 .icons {
   display: flex;
   max-width: 8%;
+}
+
+.panelDiv h1 {
+  font-family: monospace;
 }
